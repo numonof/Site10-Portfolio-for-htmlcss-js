@@ -43,7 +43,7 @@ img {
 @media (min-width: 360px) {
     .container {
         width: 100%;
-        padding: 0 20px;
+        padding: 0 0px;
         margin: 0 auto;
     }
 
@@ -53,7 +53,7 @@ img {
         left: 0;
 
         width: 100%;
-        padding: 18px 3rem;
+        padding: 18px 2rem;
         background-color: var(--bg-dark-color);
         box-shadow: var(--box-shadow);
         z-index: 100;
@@ -260,7 +260,10 @@ img {
     .about>.container {
         display: flex;
         padding-top: 60px;
+        padding-right: 20px;
         padding-bottom: 40px;
+        padding-left: 20px;
+
     }
 
     .aboute-info {
@@ -749,8 +752,8 @@ img {
     }
 
     .content_intro a>span {
-        font-size: 20px;
-        margin-right: 10px;
+        font-size: 18px;
+        margin-right: 00px;
         color: var(--duble-text-color);
     }
 
@@ -875,7 +878,18 @@ img {
     .footer__brend {
         width: 100%;
     }
+    .footer__brend>.logo{
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--text-color);
+        letter-spacing: 1px;
+        font-style: normal;
+    }
 
+    .logo>span {
+        color: var(--duble-text-color)
+    }
 
 
     /* ------------------------------------------------------------ */
@@ -884,9 +898,9 @@ img {
     }
 
     .form-control {
-        width: 40%;
+        width: 60%;
         /* height: 40px; */
-        padding: 14px 12px;
+        padding: 8px 14px;
         font-size: 16px;
         background-color: var(--bg-color);
         border: 1px solid var(--duble-text-color);
@@ -898,19 +912,20 @@ img {
     .btn-outline-success {
         text-decoration: none;
         text-transform: capitalize;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 500;
-        padding: 13px 18px;
+        padding: 8px 18px;
         background-color: var(--bg-color);
         border: 1px var(--duble-text-color) solid;
         border-radius: 6px;
         box-sizing: border-box;
         color: var(--duble-text-color);
         cursor: pointer;
+        margin-top:10px;
     }
 
     .btn-outline-success:hover {
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 500;
         box-shadow: 0px 0px 5px #C59925;
         color: #fff;
