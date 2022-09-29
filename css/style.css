@@ -295,9 +295,9 @@ img {
 
     td {
         width: 100%;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 400;
-        line-height: 24px;
+        line-height: 20px;
         letter-spacing: 0.5px;
         color: var(--text-color);
         padding: 5px 0;
@@ -6472,7 +6472,7 @@ img {
     }
 
     .footer-dec {
-        font-size: 18px;
+        font-size: 14px;
         color: var(--text-color);
     }
 
@@ -6500,7 +6500,7 @@ img {
         width: 60%;
         /* height: 40px; */
         padding: 18px 16px;
-        font-size: 16px;
+        font-size: 14px;
         background-color: var(--bg-color);
         border: 1px solid var(--duble-text-color);
         border-radius: 6px;
