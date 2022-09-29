@@ -695,8 +695,8 @@ img {
     .acardion .contenctBx .label::before {
         content: "+";
         position: absolute;
-        top: 40%;
-        right: 2px;
+        top: 35%;
+        right: 0px;
         font-size: 1.5em;
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
