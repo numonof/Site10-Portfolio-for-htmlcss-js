@@ -1,11 +1,20 @@
+const toggle = document.querySelector("#toggle");
+const navbar = document.querySelector("#navbar");
+const header = document.querySelector("#header");
 
-
-
-var hamburger = document.querySelector(".hamburger");
-hamburger.onclick = function () {
-var nav = document.querySelector(".nav");
-  nav.classList.toggle("active");
-};
+document.onclick = function (e) {
+    if(e.target.id !== 'header' && e.target.id !== 'toggle' && e.target.id !== 'navbar'){
+        toggle.classList.remove('active');
+        navbar.classList.remove('active');
+        // console.log(toggle);
+        // console.log(navbar);
+    }
+}
+toggle.onclick = function () {
+    toggle.classList.toggle('active');
+    navbar.classList.toggle('active');
+}
+// console.log(toggle);
 
 var swiper = new Swiper(".slide-content", {
   slidesPerView: 3,
@@ -41,6 +50,7 @@ var swiper = new Swiper(".slide-content", {
       }
   }
 });
+
 var acardion = document.getElementsByClassName('contenctBx');
 for ( i = 0; i < acardion.length; i++) {
     acardion[i].addEventListener('click', function () {
