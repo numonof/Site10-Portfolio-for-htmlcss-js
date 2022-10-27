@@ -51,11 +51,11 @@ img {
         position: fixed;
         top: 0;
         right: 0;
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        width: 100%;
         background-color: var(--bg-dark-color);
-        box-shadow:var(--bg-dark-color);
+        box-shadow: 5px 5px 52px;
         padding: 25px 20px 25px 20px;
         z-index: 1000;
     }
@@ -111,17 +111,17 @@ img {
     }
 
     #toggle.active::before {
-        background-color: var(--text-color);
+        background-color: var(--duble-text-color);
         transform: translateY(0px) rotate(45deg);
     }
 
     #toggle.active::after {
-        background-color: var(--text-color);
+        background-color: var(--duble-text-color);
         transform: translateY(0px) rotate(-45deg);
     }
 
     #toggle.active {
-        background-color: brown;
+        background-color: rgba(44, 50, 62, 0.506);
     }
 
     #navbar {
@@ -138,7 +138,7 @@ img {
     #navbar.active {
         width: 100vw;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.7);
         padding: 50px 0;
     }
 
@@ -152,6 +152,7 @@ img {
         margin: 0;
         padding: 0;
     }
+
     #navbar>ul>li>a {
         display: inline-block;
         text-transform: capitalize;
@@ -798,6 +799,26 @@ img {
         color: var(--duble-text-color);
     }
 
+    .btn-group {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .portfolio-btn {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal;
+        color: var(--duble-text-color);
+        letter-spacing: 1px;
+        margin-left: 30%;
+        padding: 8px 24px;
+        border: 1px solid var(--duble-text-color);
+        border-radius: 30px;
+    }
+
     /* =================================================== */
     /* =================================================== */
 
@@ -869,7 +890,7 @@ img {
 
     .contact-btn {
         padding: 8px 16px;
-        /* margin-top: 25px; */
+        margin-top: 25px;
         background-color: transparent;
     }
 
@@ -1083,7 +1104,7 @@ img {
         right: 20px;
         width: 40px;
         height: 40px;
-        background-color: #fff;
+        background-color: rgba(44, 50, 62, 0.506);
         cursor: pointer;
         display: block;
     }
@@ -1095,7 +1116,7 @@ img {
         left: 10px;
         width: 20px;
         height: 3px;
-        background-color: #000;
+        background-color: var(--duble-text-color);
         border-radius: 5px;
         transform: translateY(-5px);
         transition: 0.5s;
@@ -1108,7 +1129,7 @@ img {
         left: 10px;
         width: 20px;
         height: 3px;
-        background-color: #000;
+        background-color: var(--duble-text-color);
         border-radius: 5px;
         transform: translateY(5px);
         transition: 0.5s;
@@ -1140,7 +1161,7 @@ img {
     #navbar.active {
         width: 100vw;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.7);
         padding: 50px 0;
     }
 
@@ -1695,15 +1716,18 @@ img {
     .portfolio__head {
         padding-bottom: 50px;
     }
+    .portfolio__head>.title {
+        padding-left: 0;
+    }
 
     .portfolio__dec {
         font-size: 14px;
+        line-height: 25px;
+        letter-spacing: 1px;
         color: var(--text-color);
         text-align: center;
-        padding: 0 2rem;
-
+        padding: 0 2%;
     }
-
     .acardion {
         min-width: 100%;
         border-radius: 6px;
@@ -1798,6 +1822,26 @@ img {
         color: var(--duble-text-color);
     }
 
+    .btn-group {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .portfolio-btn {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal;
+        margin-left: 25%;
+        padding: 8px 24px;
+        color: var(--duble-text-color);
+        letter-spacing: 1px;
+        border: 1px solid var(--duble-text-color);
+        border-radius: 30px
+    }
+
     /* =================================================== */
     /* =================================================== */
 
@@ -1809,12 +1853,16 @@ img {
     .contact__head {
         padding-bottom: 25px;
     }
-
+    .contact__head>.title{
+        padding-left: 0;
+    }
     .contact__dec {
-        font-size: 16px;
+        font-size: 14px;
+        line-height: 25px;
+        letter-spacing: 1px;
         color: var(--text-color);
         text-align: center;
-        padding: 0 1em;
+        padding: 0 2%;
     }
 
     .contact {
@@ -1869,7 +1917,7 @@ img {
 
     .contact-btn {
         padding: 8px 16px;
-        /* margin-top: 25px; */
+        margin-top: 25px;
         background-color: transparent;
     }
 
@@ -2030,14 +2078,13 @@ img {
 
 }
 
-
-
 @media (min-width: 576px) {
     .container {
         width: 100%;
         padding: 0 20px;
         margin: 0 auto;
     }
+
     #header {
         width: 576px;
         position: fixed;
@@ -2047,6 +2094,7 @@ img {
         align-items: center;
         justify-content: space-between;
         background-color: var(--bg-dark-color);
+        box-shadow: 5px 5px 52px;
         padding: 25px 20px 25px 20px;
         z-index: 1000;
     }
@@ -2070,7 +2118,7 @@ img {
         right: 20px;
         width: 45px;
         height: 45px;
-        background-color: var(--bg-dark-color);
+        background-color: rgba(44, 50, 62, 0.506);
         cursor: pointer;
         display: block;
     }
@@ -2079,10 +2127,10 @@ img {
         content: '';
         position: absolute;
         top: 20px;
-        left: 6px;
+        left: 8px;
         width: 30px;
         height: 3px;
-        background-color:var(--duble-text-color);
+        background-color: var(--duble-text-color);
         border-radius: 5px;
         transform: translateY(-5px);
         transition: 0.5s;
@@ -2092,7 +2140,7 @@ img {
         content: '';
         position: absolute;
         top: 20px;
-        left: 6px;
+        left: 8px;
         width: 30px;
         height: 3px;
         background-color: var(--duble-text-color);
@@ -2102,12 +2150,12 @@ img {
     }
 
     #toggle.active:before {
-        background-color:var(--text-color);
+        background-color: var(--text-color);
         transform: translateY(0px) rotate(45deg);
     }
 
     #toggle.active::after {
-        background-color:var(--text-color);
+        background-color: var(--text-color);
         transform: translateY(0px) rotate(-45deg);
 
     }
@@ -2120,7 +2168,7 @@ img {
         position: absolute;
         top: 90px;
         right: 0px;
-        background-color: #000;
+        background-color: var(--duble-text-color);
         transition: 0.5s;
         overflow: hidden;
         width: 100%;
@@ -2130,7 +2178,7 @@ img {
     #navbar.active {
         width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(0, 0, 0, 0.7);
         /* display: block; */
         padding: 50px 0;
     }
@@ -2145,7 +2193,8 @@ img {
         margin: 0;
         padding: 0;
     }
-        #navbar>ul>li>a {
+
+    #navbar>ul>li>a {
         display: inline-block;
         text-transform: capitalize;
         text-decoration: none;
@@ -2677,11 +2726,16 @@ img {
         padding-bottom: 50px;
     }
 
+    .portfolio__head>.title {
+        padding-left: 0;
+    }
+
     .portfolio__dec {
         font-size: 18px;
+        line-height: 38px;
         color: var(--text-color);
         text-align: center;
-        padding: 0 5rem;
+        padding: 0 2%;
 
     }
 
@@ -2777,6 +2831,26 @@ img {
         font-size: 20px;
         margin-right: 10px;
         color: var(--duble-text-color);
+    }
+
+    .btn-group {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .portfolio-btn {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal;
+        color: var(--duble-text-color);
+        letter-spacing: 1px;
+        margin-left: 35%;
+        padding: 10px 26px;
+        border: 1px solid var(--duble-text-color);
+        border-radius: 30px;
     }
 
     /* =================================================== */
@@ -3004,9 +3078,6 @@ img {
 }
 
 /* //////////////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////////// */
-
-
 @media (min-width:768px) {
     .container {
         width: 100%;
@@ -3606,12 +3677,16 @@ img {
         padding-bottom: 50px;
     }
 
+    .portfolio__head>.title {
+        padding-left: 0;
+    }
+
     .portfolio__dec {
         font-size: 18px;
+        line-height: 38px;
         color: var(--text-color);
         text-align: center;
-        padding: 0 5rem;
-
+        padding: 0 10%;
     }
 
     .acardion {
@@ -3708,6 +3783,26 @@ img {
         color: var(--duble-text-color);
     }
 
+    .btn-group {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .portfolio-btn {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 20px;
+        font-weight: 500;
+        font-style: normal;
+        color: var(--duble-text-color);
+        letter-spacing: 1px;
+        margin-left: 40%;
+        padding: 10px 26px;
+        border: 1px solid var(--duble-text-color);
+        border-radius: 30px;
+    }
+
     /* =================================================== */
     /* =================================================== */
 
@@ -3718,12 +3813,16 @@ img {
     .contact__head {
         padding-bottom: 25px;
     }
+    .contact__head>.title{
+        padding-left: 0;
+    }
 
     .contact__dec {
         font-size: 16px;
+        line-height: 30px;
         color: var(--text-color);
         text-align: center;
-        padding: 0 7em;
+        padding: 0 17%;
     }
 
     .contact {
@@ -3775,8 +3874,8 @@ img {
     }
 
     .contact-btn {
-        padding: 8px 16px;
-        /* margin-top: 25px; */
+        padding: 12px 24px;
+        margin-top: 25px;
         background-color: transparent;
     }
 
@@ -3928,7 +4027,6 @@ img {
 }
 
 /* //////////////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////////// */
 @media (min-width:992px) {
     .container {
         width: 100%;
@@ -3940,12 +4038,14 @@ img {
         position: fixed;
         top: 0;
         right: 0;
+
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
         background-color: var(--bg-dark-color);
         box-shadow: var(--box-shadow);
+        padding: 10px 20px 10px 20px;
         z-index: 1000;
     }
 
@@ -4543,12 +4643,17 @@ img {
         padding-bottom: 50px;
     }
 
+    .portfolio__head>.title {
+        padding-left: 0;
+    }
+
     .portfolio__dec {
         font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 35px;
         color: var(--text-color);
         text-align: center;
-        padding: 0 5rem;
-
+        padding: 10px 20%;
     }
 
     .acardion {
@@ -4645,6 +4750,26 @@ img {
         color: var(--duble-text-color);
     }
 
+    .btn-group {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .portfolio-btn {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 22px;
+        font-weight: 500;
+        font-style: normal;
+        color: var(--duble-text-color);
+        letter-spacing: 1px;
+        margin-left: 45%;
+        padding: 12px 28px;
+        border: 1px solid var(--duble-text-color);
+        border-radius: 30px;
+    }
+
     /* =================================================== */
     /* =================================================== */
 
@@ -4656,12 +4781,16 @@ img {
     .contact__head {
         padding-bottom: 25px;
     }
-
+    .contact__head .title{
+        padding-left: 0;
+    }
     .contact__dec {
-        font-size: 16px;
+        font-size: 18px;
+        line-height: 35px;
+        letter-spacing:1px;
         color: var(--text-color);
         text-align: center;
-        padding: 0 7em;
+        padding: 0 18%;
     }
 
     .contact {
@@ -4715,8 +4844,8 @@ img {
     }
 
     .contact-btn {
-        padding: 8px 16px;
-        /* margin-top: 25px; */
+        padding: 14px 24px;
+        margin-top: 25px;
         background-color: transparent;
     }
 
@@ -4883,12 +5012,14 @@ img {
         position: fixed;
         top: 0;
         right: 0;
+
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
         background-color: var(--bg-dark-color);
         box-shadow: var(--box-shadow);
+        padding: 10px 20px 10px 20px;
         z-index: 1000;
     }
 
@@ -5493,7 +5624,7 @@ img {
         font-size: 20px;
         color: var(--text-color);
         text-align: center;
-
+        padding: 20px 20%;
     }
 
     .acardion {
@@ -5590,6 +5721,26 @@ img {
         color: var(--duble-text-color);
     }
 
+    .btn-group {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .portfolio-btn {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 22px;
+        font-weight: 500;
+        font-style: normal;
+        color: var(--duble-text-color);
+        letter-spacing: 1px;
+        margin-left: 45%;
+        padding: 12px 28px;
+        border: 1px solid var(--duble-text-color);
+        border-radius: 30px;
+    }
+
     /* =================================================== */
     /* =================================================== */
 
@@ -5661,7 +5812,7 @@ img {
 
     .contact-btn {
         padding: 16px 32px;
-        /* margin-top: 25px; */
+        margin-top: 25px;
         background-color: transparent;
     }
 
@@ -6512,9 +6663,27 @@ img {
         color: var(--duble-text-color);
     }
 
-    /* =================================================== */
-    /* =================================================== */
+    .btn-group {
+        width: 100%;
+        padding-top: 50px;
+    }
 
+    .portfolio-btn {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 22px;
+        font-weight: 500;
+        font-style: normal;
+        color: var(--duble-text-color);
+        letter-spacing: 1px;
+        margin-left: 45%;
+        padding: 12px 28px;
+        border: 1px solid var(--duble-text-color);
+        border-radius: 30px;
+    }
+
+    /* =================================================== */
     /* ------------------------------------------------------------ */
     .contact__section {
         padding: 80px 20px 80px 20px;
@@ -6583,7 +6752,7 @@ img {
 
     .contact-btn {
         padding: 16px 32px;
-        /* margin-top: 25px; */
+        margin-top: 25px;
         background-color: transparent;
     }
 
